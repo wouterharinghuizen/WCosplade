@@ -39,8 +39,8 @@ def parse_canard(filename):
 	
 	return question_dict, rewrite_dict, response_dict
 
-dev = parse_canard(f"C:\\Users\\hoiho\\Desktop\\cosplade-main\\CANARD\\dev.json")
-test = parse_canard(f"C:\\Users\\hoiho\\Desktop\\cosplade-main\\CANARD\\test.json")
-train = parse_canard(f"C:\\Users\\hoiho\\Desktop\\cosplade-main\\CANARD\\train.json")
+dev = parse_canard(f"cosplade-main\\CANARD\\dev.json")
+test = parse_canard(f"cosplade-main\\CANARD\\test.json")
+train = parse_canard(f"cosplade-main\\CANARD\\train.json")
 with open("canard.pkl","wb") as f:
 	pickle.dump((train,dev,test),f,protocol=-1)
